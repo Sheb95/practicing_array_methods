@@ -46,4 +46,17 @@ let myNumbers = [1, 2, 3 , 5, 10, 1, 10 ,-20];
 console.log(myNumbers.every(allNumsGreaterThanZero));
 
 
+/// practicing array methods on Rick and Morty API 
 
+// create async function to get data
+// fetch data and assign to variable response 
+// parse data into json 
+
+
+async function getRickAndMorty(){
+    const response = await fetch("https://rickandmortyapi.com/api/character");
+    const data = await response.json();
+    console.log(data);
+}
+
+getRickAndMorty();
